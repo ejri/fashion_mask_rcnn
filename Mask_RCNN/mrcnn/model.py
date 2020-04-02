@@ -16,6 +16,9 @@ import logging
 from collections import OrderedDict
 import multiprocessing
 import numpy as np
+
+#conda install -n virtual_fashion tensorflow>=1.3.0,<2.0
+#conda install -n virtual_fashion keras>=2.0.8,<2.3
 import tensorflow as tf
 import keras
 import keras.backend as K
@@ -30,6 +33,8 @@ from distutils.version import LooseVersion
 assert LooseVersion(tf.__version__) >= LooseVersion("1.3")
 assert LooseVersion(keras.__version__) >= LooseVersion('2.0.8')
 
+
+print(tf.__version__)
 
 ############################################################
 #  Utility Functions

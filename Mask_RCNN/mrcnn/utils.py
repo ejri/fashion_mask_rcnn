@@ -13,6 +13,9 @@ import logging
 import math
 import random
 import numpy as np
+
+#conda install -n virtual_fashion tensorflow>=1.3.0,<2.0
+
 import tensorflow as tf
 import scipy
 import skimage.color
