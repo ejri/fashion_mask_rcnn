@@ -1,4 +1,4 @@
-#!/Users/ibrahim/Downloads/fashion_mask_rcnn/virtual_fashion/bin/python
+#!/Users/ibrahim/Downloads/fashion_mask_rcnn/virtual_fashion/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
