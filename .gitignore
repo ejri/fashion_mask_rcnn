@@ -3,3 +3,6 @@ validation
 train
 json_for_validation
 deepfashion2.json
+DeepFashion2.zip
+Mask_RCNN.zip
+mask_rcnn_fashion.h5
