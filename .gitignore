@@ -7,3 +7,7 @@ DeepFashion2.zip
 Mask_RCNN.zip
 mask_rcnn_fashion.h5
 mask_rcnn_fashion_0031.h5
+mask_rcnn_fashion_whole_model.h5
+model.h5
+model_yolov3_fashion.h5
+model_yolov3_fashion_compiled.h5
