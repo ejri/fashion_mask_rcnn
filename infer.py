@@ -1,3 +1,7 @@
+# This file contains the configs for  prediction to be
+# called within the model_predict(img, model) fundtion in the web app
+#
+
 from Mask_RCNN.mrcnn.config import Config
 
 from os import listdir
@@ -60,7 +64,7 @@ class PredictionConfig(Config):
 
     # Minimum probability value to accept a detected instance
     # ROIs below this threshold are skipped
-    DETECTION_MIN_CONFIDENCE = 0.1
+    DETECTION_MIN_CONFIDENCE = 0.6
 
     # Non-maximum suppression threshold for detection
     DETECTION_NMS_THRESHOLD = 0.0
@@ -72,7 +76,7 @@ cfg = PredictionConfig()
 model = MaskRCNN(mode="inference", model_dir="./", config=cfg)
 # load model weights. Where it was trained in the earlier step.
 # the latest mask has the least error, so load that one
-model_path = "/Users/ibrahim/Downloads/fashion_mask_rcnn/mask_rcnn_fashion.h5"
+model_path = "/Users/ibrahim/Downloads/fashion_mask_rcnn/mask_rcnn_fashion_0033.h5"
 
 # in case of an error, use below
 # model.load_weights(model_path, by_name=True, exclude=[ "mrcnn_class_logits", "mrcnn_bbox_fc", "mrcnn_bbox", "mrcnn_mask"])
@@ -83,3 +87,4 @@ model.load_weights(
 )
 
 model.keras_model.summary()
+
