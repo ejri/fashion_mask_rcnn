@@ -76,7 +76,7 @@ cfg = PredictionConfig()
 model = MaskRCNN(mode="inference", model_dir="./", config=cfg)
 # load model weights. Where it was trained in the earlier step.
 # the latest mask has the least error, so load that one
-model_path = "/Users/ibrahim/Downloads/fashion_mask_rcnn/mask_rcnn_fashion_0033.h5"
+model_path = "/Users/ibrahim/Downloads/fashion_mask_rcnn/mask_rcnn_fashion.h5"
 
 # in case of an error, use below
 # model.load_weights(model_path, by_name=True, exclude=[ "mrcnn_class_logits", "mrcnn_bbox_fc", "mrcnn_bbox", "mrcnn_mask"])
