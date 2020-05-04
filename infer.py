@@ -1,6 +1,6 @@
 # This file contains the configs for  prediction to be
 # called within the model_predict(img, model) fundtion in the web app
-#
+# contains the predict config for the Mask RCNN model
 
 from Mask_RCNN.mrcnn.config import Config
 
@@ -87,4 +87,3 @@ model.load_weights(
 )
 
 model.keras_model.summary()
-
